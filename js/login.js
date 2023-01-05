@@ -20,6 +20,15 @@ $('#login-button').click(function (event) {
       location.href = "BirthdayCake.html";
     }, 2000);
   }
+  else if (userName == "李诗芬" && pwd == "1999") {
+    event.preventDefault();
+    $('form').fadeOut(500);
+    $('.wrapper').addClass('form-success');
+    requestFullScreen();
+    setTimeout(function () {
+      location.href = "BirthdayCake.html";
+    }, 2000);
+  }
   else if (userName == "1" && pwd == "1") {
     event.preventDefault();
     $('form').fadeOut(500);
